@@ -57,6 +57,7 @@ var getCoordinates = function(zipInput) {
 }
 
 var getTrailInfo = function(latitude, longitude) {
+    // var secretKey = 
     var apiKey = "AtVPCFspco6yXG6X2mdr0-y2H4XO7ZPHdP_Tj-jLPHoBCXKiJlNCsG41H7GSWoYl";
     var apiUrl = "https://dev.virtualearth.net/REST/v1/LocalSearch/?type=Parks&userCircularMapView=" + latitude + "," + longitude + "," + "5000&key=" + apiKey; //returns POIs like community centers, landmarks, farms, etc. NO TRAILS OR PARKS.
     // var apiUrl = "https://dev.virtualearth.net/REST/v1/LocalSearch/?query=park&userCircularMapView=" + latitude + "," + longitude + "," + "5000&key=" + apiKey; search one parameter at a time - PARK | TRAIL
